@@ -11,3 +11,16 @@ def divide_exact(n, d):
     3
     """
     return floordiv(n, d), mod(n, d)
+
+def absolute_value(x):
+    """Return the absolute value of x.
+    
+    >>> absolute_value(-5)
+    5
+    >>> absolute_value(5)
+    5
+    """
+    if x < 0:
+        return -x
+    else:
+        return x
